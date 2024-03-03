@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jpK-y7-Hbf">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OzinsheDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-440" y="25"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oRA-WO-4gP">
+            <objects>
+                <viewController id="0Dv-JX-hDq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2jy-Wk-oKr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="F4P-78-xak"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Search" selectedImage="Search Selected" id="K34-45-2gy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pf8-cg-79M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1338" y="328"/>
+        </scene>
+        <!--Favorite Table View Controller-->
+        <scene sceneID="aZt-in-T4x">
+            <objects>
+                <tableViewController id="KlA-Uj-SFY" customClass="FavoriteTableViewController" customModule="OzinsheDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="fg8-uU-DX9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="159" id="fXg-0K-P65" customClass="MovieTableViewCell" customModule="OzinsheDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="159"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fXg-0K-P65" id="jEh-24-05S">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="159"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Қызғалдақтар мекені" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OB-Y4-W8a">
+                                            <rect key="frame" x="102" y="21" width="218" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="R55-eO-2o0"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2020 • Телехикая • Мультфильм" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2M-1p-eIJ">
+                                            <rect key="frame" x="102" y="50" width="279" height="31"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uP-bL-TbD">
+                                            <rect key="frame" x="102" y="89" width="236" height="59"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="29v-DP-WTn">
+                                                    <rect key="frame" x="-86" y="-100" width="65" height="178"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Play" translatesAutoresizingMaskIntoConstraints="NO" id="y8E-BU-r8L">
+                                                    <rect key="frame" x="0.0" y="4" width="7" height="12"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Қарау" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoE-Yb-epi">
+                                                    <rect key="frame" x="32" y="6" width="141" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" name="AccentColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="y8E-BU-r8L" firstAttribute="leading" secondItem="1uP-bL-TbD" secondAttribute="leading" id="0Tq-Q9-1Ji"/>
+                                                <constraint firstAttribute="bottom" secondItem="y8E-BU-r8L" secondAttribute="bottom" constant="-9" id="C1Z-rS-RIF"/>
+                                                <constraint firstAttribute="trailing" secondItem="y8E-BU-r8L" secondAttribute="trailing" constant="162" id="Tsk-Pu-6h7"/>
+                                                <constraint firstItem="y8E-BU-r8L" firstAttribute="top" secondItem="1uP-bL-TbD" secondAttribute="top" constant="-46" id="vVi-hr-D0w"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1uP-bL-TbD" firstAttribute="top" secondItem="O2M-1p-eIJ" secondAttribute="bottom" constant="8" symbolic="YES" id="104-Ab-xIE"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="1uP-bL-TbD" secondAttribute="trailing" constant="35" id="6Rg-2G-Sj2"/>
+                                        <constraint firstItem="1uP-bL-TbD" firstAttribute="leading" secondItem="O2M-1p-eIJ" secondAttribute="leading" id="EpC-iw-ES6"/>
+                                        <constraint firstItem="1uP-bL-TbD" firstAttribute="leading" secondItem="3OB-Y4-W8a" secondAttribute="leading" id="LqV-a3-lUT"/>
+                                        <constraint firstItem="O2M-1p-eIJ" firstAttribute="top" secondItem="3OB-Y4-W8a" secondAttribute="bottom" constant="8" symbolic="YES" id="MJg-Fr-rUr"/>
+                                        <constraint firstItem="1uP-bL-TbD" firstAttribute="leading" secondItem="jEh-24-05S" secondAttribute="leadingMargin" constant="82" id="TBG-b9-fwT"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="3OB-Y4-W8a" secondAttribute="trailing" constant="53" id="bnh-6E-G46"/>
+                                        <constraint firstItem="3OB-Y4-W8a" firstAttribute="top" secondItem="jEh-24-05S" secondAttribute="topMargin" constant="10" id="k6Q-oG-2MM"/>
+                                        <constraint firstItem="1uP-bL-TbD" firstAttribute="top" secondItem="jEh-24-05S" secondAttribute="top" constant="89" id="rBq-xl-IUA"/>
+                                        <constraint firstItem="1uP-bL-TbD" firstAttribute="bottom" secondItem="jEh-24-05S" secondAttribute="bottomMargin" id="yQM-fB-YDy"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="3OB-Y4-W8a" id="aIc-U6-RdX"/>
+                                    <outlet property="playView" destination="1uP-bL-TbD" id="vFP-Kj-dGr"/>
+                                    <outlet property="posterImageView" destination="29v-DP-WTn" id="Krd-de-2A2"/>
+                                    <outlet property="yearLabel" destination="O2M-1p-eIJ" id="3UH-sJ-fgT"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KlA-Uj-SFY" id="9CT-MJ-OGn"/>
+                            <outlet property="delegate" destination="KlA-Uj-SFY" id="G4t-Dt-fUs"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="Favorite" selectedImage="Favorite Selected" id="Fwp-iw-oeh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BS7-Hy-u3T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336.6412213740457" y="1054.9295774647887"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PXQ-u6-I4D">
+            <objects>
+                <viewController id="VfJ-PY-tpI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n8n-Os-zT2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="P9f-aF-GcQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Profile" selectedImage="Profile Selected " id="YQ8-Ht-iA9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iCH-6s-V7W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1337" y="1737"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ob2-L6-7O3">
+            <objects>
+                <viewController id="JmK-tg-Dyn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nAg-k6-G8i">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Q1S-nu-UhW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Home" selectedImage="Home Selected" id="pCE-9h-9L6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zzf-nD-ARs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1338" y="-369"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="SlJ-ot-LT2">
+            <objects>
+                <tabBarController id="jpK-y7-Hbf" customClass="TabBarController" customModule="OzinsheDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w3d-FO-MQ8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JmK-tg-Dyn" kind="relationship" relationship="viewControllers" id="MBR-0i-l1q"/>
+                        <segue destination="0Dv-JX-hDq" kind="relationship" relationship="viewControllers" id="7ib-CY-DUd"/>
+                        <segue destination="KlA-Uj-SFY" kind="relationship" relationship="viewControllers" id="0Nn-9T-nrF"/>
+                        <segue destination="VfJ-PY-tpI" kind="relationship" relationship="viewControllers" id="Qai-wY-Ao4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H2V-vf-Vmz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="360" y="567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Favorite" width="40" height="40"/>
+        <image name="Favorite Selected" width="40" height="40"/>
+        <image name="Home" width="40" height="40"/>
+        <image name="Home Selected" width="40" height="40"/>
+        <image name="Image 1" width="72" height="104"/>
+        <image name="Play" width="17" height="16"/>
+        <image name="Profile" width="40" height="40"/>
+        <image name="Profile Selected " width="40" height="40"/>
+        <image name="Search" width="40" height="40"/>
+        <image name="Search Selected" width="40" height="40"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
